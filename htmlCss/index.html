@@ -4,6 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pengenalan HTML & CSS | CODEPOLITAN</title>
+
+    <style>
+      #header {
+        background: #00ccff;
+        height: 10%;
+        font-size: 1.5rem;
+        text-align: center;
+        padding-top: 20px;
+      }
+      #sidebar {
+        background: #99ccff;
+        float: left;
+        height: 400px;
+        width: 30%;
+        font-size: 1.5rem;
+        text-align: center;
+        padding-top: 20px;
+      }
+      #content {
+        background: #9999ff;
+        float: right;
+        width: 70%;
+        height: 400px;
+        font-size: 1.5rem;
+        text-align: center;
+        padding-top: 20px;
+      }
+      #footer {
+        background: #3399ff;
+        clear: both;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <a href="/index.html">back to homepage</a>
@@ -96,6 +130,280 @@
       <a href="https://www.w3schools.com/cssref/"
         >https://www.w3schools.com/cssref/</a
       >
+    </p>
+
+    <hr />
+
+    <!-- membuat table -->
+    <h3>Membuat Table</h3>
+    <p>
+      Colspan adalah perintah untuk menggabungkan beberapa kolom menjadi satu.
+    </p>
+    <p>
+      Rowspan adalah perintah untuk menggabungkan beberapa baris kolom menjadi
+      satu.
+    </p>
+    <table border="1">
+      <tr>
+        <th>No</th>
+        <th>Nama</th>
+        <th>Alamat</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Roy</td>
+        <td rowspan="2">Bandung</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Boy</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Roni</td>
+        <td>Malang</td>
+      </tr>
+    </table>
+
+    <!-- list html -->
+    <h3>List HTML</h3>
+    <p>
+      Membuat list html biasanya mengarah pada pengurutan sebuah kata yang
+      didalamnya terdiri dari banyaknya poin. Dalam pembuatannya, list dibagi
+      menjadi 2. yaitu: Ordered list dan Unodered list
+    </p>
+    <p>Contohnya:</p>
+    <h5>Ordered List</h5>
+    <ol>
+      <li>ini adakah ordered list 1</li>
+      <li>ini adakah ordered list 2</li>
+      <li>ini adakah ordered list 3</li>
+    </ol>
+    <h5>Unordered List</h5>
+    <ul>
+      <li>ini adakah unordered list 1</li>
+      <li>ini adakah unordered list 2</li>
+      <li>ini adakah unordered list 3</li>
+    </ul>
+    <hr />
+
+    <!-- Membuat layout menggunakan table -->
+    <h2>Membuat Layout dengan Table</h2>
+    <p>
+      table disusun dari kolom dan baris, kita dapat menggunakan kolom dan baris
+      tersebut menjadi sebuah layout.
+    </p>
+    <p><strong>Colspan</strong> digunakan untuk menggabungkan kolom.</p>
+    <p>
+      <strong>Width</strong> digunakan untuk mengatur lebar kolom. Kita bisa
+      mengisinya dalam bentuk px maupun %.
+    </p>
+    <p>
+      <strong>Height</strong> digunakan untuk mengatur tinggi kolom. Kita bisa
+      mengisinya dalam bentuk px maupun %.
+    </p>
+    <table width="100%">
+      <tr>
+        <td style="background: red" colspan="2"><h1>Header</h1></td>
+      </tr>
+      <tr valign="top">
+        <td style="background: green" width="50%">
+          <strong>Sidebar</strong>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="forum.html">Forum</a></li>
+          </ul>
+        </td>
+        <td width="100%" height="550" style="background: purple">
+          <strong>Halaman konten</strong>Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Ipsam, veniam. Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Laudantium minus vero quo consequatur ea
+          perspiciatis error repellat, natus facilis sit beatae itaque cumque!
+          Ipsum, quaerat?
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="background: blue"><h1>Footer</h1></td>
+      </tr>
+    </table>
+
+    <h3>Membuat Layout dengan Tag Div</h3>
+    <div id="header">Header</div>
+    <div id="sidebar">Sidebar</div>
+    <div id="content">Content</div>
+    <div id="footer">Footer</div>
+
+    <hr />
+    <!-- Display dan dimensi -->
+    <h2>Display dan Dimension</h2>
+    <h3>Tag Div dan Span</h3>
+    <p>
+      Tag div dan span digunakan untuk mengelompokan elemen html atau memberi
+      style secara spesifik.
+    </p>
+    <h4>Default display mode</h4>
+    <p>Tag <strong>div</strong> bersifat block.</p>
+    <p>Tag <strong>span</strong> bersifat inline.</p>
+    <br />
+
+    <h4>Opsi nilai display</h4>
+    <h5>block</h5>
+    <ul>
+      <li>membuat baris baru saat dirender</li>
+      <li>dapat diset lebar dan tingginya</li>
+      <li>
+        bila lebar tidak diset, maka lebar elemen akan memenuhi lebar dari
+        parentnya
+      </li>
+      <li>
+        di dalamnya dapat disimpan elemen bertipe block, inline dan inline-block
+      </li>
+    </ul>
+    <br />
+    <h5>inline</h5>
+    <ul>
+      <li>tidak membuat garis baru saat dirender</li>
+      <li>lebar dan tinggi sebesar konten yang ada di dalamnya</li>
+      <li>lebar dan tingginya tidak dapat diatur</li>
+      <li>
+        margin dan padding hanya mempengaruhi elemen secara horizontal dan tidak
+        vertikal.
+      </li>
+    </ul>
+    <br />
+    <h5>inline-block</h5>
+    <ul>
+      <li>tidak ada elemen html yang default bertipe inline-block</li>
+      <li>nilai property display dapat diset manual menjadi inline-block</li>
+      <li>sifat dasar sama dengan inline</li>
+      <li>inline-block akan berpengaruh dari property width dan height.</li>
+    </ul>
+    <br />
+    <h5>none</h5>
+    <p>digunakan untuk menyembunyikan elemen dari layar browser.</p>
+    <img
+      src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*Ab2FsBXuCzEMsBdWnH7tjQ.png"
+      alt="display block inline inline-block" />
+
+    <hr />
+    <hr />
+    <!-- box model -->
+    <h2>Box Model</h2>
+    <p>
+      Setiap elemen dihalaman html dipresentasikan sebagai sebuah kotak. Kita
+      bisa mengatur ukuran maupun posisi kotak tersebut.
+    </p>
+    <h3>Komponen Box Model</h3>
+    <p>
+      <strong>Margin</strong> Jarak spasi antara satu elemen dengan elemen lain
+      atau elemen parentnya. Margin bersifat transparan.
+    </p>
+    <p>
+      <strong>Border</strong> batang garis yang mengelilingi padding dan
+      content.
+    </p>
+    <p>
+      <strong>Padding</strong> jarak spasi antara border dan content. Padding
+      bersifat transparan.
+    </p>
+    <p>
+      <strong>Content</strong> isi dari elemen, bisa berupa text atau elemen
+      lain. Text, gambar atau elemen lainnya ditampilkan dibagian content.
+    </p>
+
+    <br />
+    <h3>Property margin, padding dan border.</h3>
+    <table border="1" style="text-align: center">
+      <tr>
+        <th>margin</th>
+        <th>padding</th>
+        <th>border</th>
+      </tr>
+      <tr>
+        <td style="padding: 10px">
+          margin-top | margin-right | margin-bottom | margin-left | margin
+        </td>
+        <td style="padding: 10px">
+          padding-top | padding-right | padding-bottom | padding-left | padding
+        </td>
+        <td style="padding: 10px">
+          border-top | border-right | border-bottom | border-left | border
+        </td>
+      </tr>
+      <tr>
+        <td>px | % | auto</td>
+        <td>px | % | note: padding tidak boleh bernilai negatif</td>
+        <td>
+          cth: border: width style color; <br />
+          width: ukuran ketebalan border (1px, 2px, 3px, ...) <br />
+          style: bentuk garis (dotted, dashed, solid) <br />
+          color: warna dari border
+        </td>
+      </tr>
+    </table>
+
+    <!-- box sizing -->
+    <h3>Box Sizing</h3>
+    <h4>content-box</h4>
+    <p>
+      Apabila menggunakan content-box, maka lebar box akan dijumlahkan dengan
+      padding.
+    </p>
+    <p>
+      Misal lebar konten 160px dengan padding-left 40px dan padding-right 40px,
+      maka total lebar box tersebut menjadi 240px.
+    </p>
+    <h4>border-box</h4>
+    <p>
+      Pada border-box ukuran sudah ditentukan 160px, tidak akan dijumlahkan
+      dengan padding yang kita tentukan.
+    </p>
+    <br />
+
+    <!-- overflow -->
+    <h3>Overflow</h3>
+    <h4>auto</h4>
+    <p>
+      Pada overflow auto akan ditambahkan scroll apabila konten yang ada
+      melebihi box yang disediakan, namun bila konten yang ada tidak melebihi
+      box. Maka tidak akan ditambahkan scroll.
+    </p>
+    <h4>scroll</h4>
+    <p>
+      Pada overflow scroll, setiap box akan ditabahkan scroll atau tidak
+      memandang apakah koten yang ada sedikit ataupun banyak.
+    </p>
+    <h4>hidden</h4>
+    <p>
+      Pada overflow hidden, apabila konten yang ada banyak dan melebihi box.
+      Maka konten sisanya tidak akan ditampilkan.
+    </p>
+
+    <hr />
+
+    <!-- css float -->
+    <h2>CSS Float</h2>
+    <p>
+      css float digunakan untuk memposisikan elemen dalam sebuah layout halaman
+      website. Property elemen float: left, right, none. Secara default float
+      memiliki nilai none.
+    </p>
+    <p>
+      <strong>float: none;</strong> menentukan bahwa sebuah elemen tidak boleh
+      mengapung(float).
+    </p>
+    <p>
+      <strong>float: left;</strong> digunakan untuk menentukan bahwa sebuah
+      elemen harus mengapung(float) disebelah kiri dari elemen blok yang
+      menampungnya.
+    </p>
+
+    <p>
+      <strong>float: right;</strong> digunakan untuk menentukan bahwa sebuah
+      elemen harus mengapung(float) disebelah kanan dari elemen blok yang
+      menampungnya.
     </p>
   </body>
 </html>
