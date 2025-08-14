@@ -399,11 +399,557 @@
       elemen harus mengapung(float) disebelah kiri dari elemen blok yang
       menampungnya.
     </p>
-
     <p>
       <strong>float: right;</strong> digunakan untuk menentukan bahwa sebuah
       elemen harus mengapung(float) disebelah kanan dari elemen blok yang
       menampungnya.
     </p>
+    <hr />
+
+    <!-- css position -->
+    <h2>CSS Position</h2>
+    <p>
+      CSS position terdiri dari 4 nilai, yaitu: static, relative, absolute,
+      fixed.
+    </p>
+    <p>default position: static.</p>
+    <h3>static</h3>
+    <p><strong>position: static;</strong></p>
+    <ol>
+      <li>
+        static adalah niali default dari tipa-tiap elemen ketika tidak diberi
+        property position.
+      </li>
+      <li>
+        Menggunakan position selain static (non-static) akan membuat sebuah
+        elemenmenjadi seolah olah berbeda dimensi dari elemen lainnya.
+      </li>
+      <li>
+        Elemen yang diberi position selain static dapat menggunakan properti
+        top, left, bottom, right untuk mengatur posisinya.
+      </li>
+    </ol>
+    <img
+      src="https://cdn-cdpl.sgp1.cdn.digitaloceanspaces.com/courses/basic-html-dan-css/images/position1.png"
+      alt="position static" />
+
+    <h3>relative</h3>
+    <p><strong>position: relative;</strong></p>
+    <ol>
+      <li>
+        ketika kita menggerakkan elemen dengan posisi relative(top, left,
+        bottom, right) ruang yang ditempati elemen tersebut masih ada.
+      </li>
+      <li>
+        ketika kita menggerakkan elemen dengan posisi relative, elemen akan
+        bergerak relatif terhadap posisi semulanya.
+      </li>
+      <li>
+        jika kita memberi properti top: 0; dan left: 0; maka elemen tidak
+        berubah posisinya.
+      </li>
+    </ol>
+    <img
+      src="https://cdn-cdpl.sgp1.cdn.digitaloceanspaces.com/courses/basic-html-dan-css/images/position2.png"
+      alt="position relative" />
+
+    <h3>absolute</h3>
+    <p><strong>position: absolute;</strong></p>
+    <ol>
+      <li>
+        ketika kita menggerakkan elemen dengan posisi absolute(top, left,
+        bottom, right), ruang yang ditempati oleh elemen tersebut dianggap tidak
+        ada.
+      </li>
+      <li>
+        ketika kita menggerakkan elemen dengan posisi absolute, elemen akan
+        bergerak relatif terhadap posisi dan elemen parentnya. selama elemen
+        parentnya memiliki posisi yang juga non-static.
+      </li>
+      <li>
+        jika kita memberi properti top:0; dan left:0;, maka elemen akan berada
+        di ujung kiri atas dari elemennya.
+      </li>
+    </ol>
+    <img
+      src="https://cdn-cdpl.sgp1.cdn.digitaloceanspaces.com/courses/basic-html-dan-css/images/position3.png"
+      alt="position absolute memiliki parent" />
+    <p>
+      jika <strong>absolute</strong> tidak memiliki parent relative maka
+      posisinya akan seperti ini:
+    </p>
+    <img
+      src="https://cdn-cdpl.sgp1.cdn.digitaloceanspaces.com/courses/basic-html-dan-css/images/position4.png"
+      alt="position absolute tanpa parent" />
+    <p>
+      tetapi jika <strong>absolute</strong> memiliki parent elemen relative maka
+      absolute akan menempel pada parent relative seperti ini:
+    </p>
+    <img
+      src="https://cdn-cdpl.sgp1.cdn.digitaloceanspaces.com/courses/basic-html-dan-css/images/position5.png"
+      alt="position absolute memiliki parent relative" />
+
+    <h3>fixed</h3>
+    <p><strong>position: fixed;</strong></p>
+    <ol>
+      <li>
+        ketika kita menggerakkan elemen dengan posisi fixed(top, left, bottom,
+        right), ruang yang ditempati oleh elemen tersebut dianggap tidak ada.
+      </li>
+      <li>
+        ketika kita menggerakkan elemen dengan posisi absolute, elemen akan
+        bergerak relatif terhadap window(browser), meskipun elemen parentnya
+        bernilai non-static.
+      </li>
+      <li>
+        jika kita memberi properti top:0; dan left:0; maka elemen akan berada di
+        ujung kiri atas dari elemen parentnya.
+      </li>
+      <li>
+        elemen akan terkunci dan tidak bergerak dari posisinya meskipun halaman
+        di scroll.
+      </li>
+    </ol>
+
+    <!-- gambar proprty position -->
+    <img
+      src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*x5xm9DVS6QouWCAeII9w8A.png"
+      alt="position property" />
+    <hr />
+    <h2>CSS Background</h2>
+    <p>
+      property background dalam css digunakan untuk mendefinisikanefek
+      background dalam suatu elemen.
+    </p>
+    <p>property background:</p>
+    <h3>background-color</h3>
+    <p>
+      <strong>background-color</strong> digunakan untuk menenetukan warna
+      background dari sebuah elemen.
+    </p>
+    <p>Di dalam css, warna ditentukan oleh:</p>
+    <ul>
+      <li>HEX value = seperti #ff0000</li>
+      <li>RGB value - seperti rgb(255, 0, 0)</li>
+      <li>nama warna - seperti red</li>
+    </ul>
+    <h3>background-image</h3>
+    <p>
+      <strong>background-image</strong> digunakan untuk menentukan bacground
+      berupa gambar.
+    </p>
+    <p>contoh penggunaannya: bacground-image: url(image.jpg);</p>
+    <h3>background-repeat</h3>
+    <p>
+      <strong>background-repeat</strong> digunakan untuk mengulang gambar secara
+      horizontal dan vertikal. gambar dapat diulang dengan menggunakan repeat-x
+      atau repeat-y
+    </p>
+    <p>contohnya: background-repeat: repeat-y;</p>
+    <h3>background-position</h3>
+    <p>
+      <strong>background-position</strong> digunakan untuk menentukan posisi
+      background. value yang dapat digunakan: left top, left center, left
+      bottom, right top, right center, right center, right bottom, center top,
+      center center, center bottom.
+    </p>
+    <p>contohnya: background-position: center;</p>
+
+    <hr />
+    <!-- css text -->
+    <h2>CSS Text</h2>
+    <h2>Font Styling</h2>
+    <h3>color</h3>
+    <p>
+      Color digunakan untuk memberi warna pada tulisan. spesifikasi warnanya
+      adalah:
+    </p>
+    <ul>
+      <li>nama warna = red, green, blue, white, dst...</li>
+      <li>kode HEX = #000, #fff, #fff000, #aadd66</li>
+      <li>RGB = rgb(255, 0, 0), rgb(32, 178, 170), dst...</li>
+    </ul>
+    <h3>text-align</h3>
+    <p>digunakan untuk mengatur format paragraf atau teks secara horizontal.</p>
+    <p>teks dapat diatur rata ke kanan, kiri, tengah dan juga justify.</p>
+    <p>contohnya:</p>
+    <img
+      src="https://cdn-cdpl.sgp1.cdn.digitaloceanspaces.com/courses/basic-html-dan-css/images/text_align.png"
+      alt=""
+      border="1" />
+    <h3>text-indent</h3>
+    <p>memberi identasi pada paragraf atau teks.</p>
+    <p>satuan untuk text-indent adalah px dan %.</p>
+    <p>contohnya:</p>
+    <img
+      src="https://cdn-cdpl.sgp1.cdn.digitaloceanspaces.com/courses/basic-html-dan-css/images/text_indent.png"
+      alt=""
+      border="1" />
+    <h3>text-decoration</h3>
+    <p>
+      mengatur dekorasi pada teks. kita dapat memberikan dekorasi berupa garis
+      bawah, garis atas atau garis di tengah-tengah teks.
+    </p>
+    <img
+      src="https://cdn-cdpl.sgp1.cdn.digitaloceanspaces.com/courses/basic-html-dan-css/images/text_decoration.png"
+      alt=""
+      border="1" />
+    <h3>text-transform</h3>
+    <p>mengubah jenis huruf menjadi huruf besar, kecil, kapital.</p>
+    <ol>
+      <li>
+        <strong>uppercase</strong> digunakan untuk mengubah teks menjadi huruf
+        besar semua.
+      </li>
+      <li>
+        <strong>lowercase</strong> digunakan untuk mengubah teks menjadi huruf
+        kecil semua.
+      </li>
+      <li>
+        <strong>capitalize</strong> digunakan untuk mengubah huruf pertama
+        menjadi huruf besar.
+      </li>
+    </ol>
+    <img
+      src="https://cdn-cdpl.sgp1.cdn.digitaloceanspaces.com/courses/basic-html-dan-css/images/text_transform.png"
+      alt=""
+      border="1" />
+    <h3>letter-spacing</h3>
+    <p>mengatur spasi atau jarak antar huruf.</p>
+    <img
+      src="https://cdn-cdpl.sgp1.cdn.digitaloceanspaces.com/courses/basic-html-dan-css/images/spasi.png"
+      alt=""
+      border="1" />
+    <h3>word-spacing</h3>
+    <p>mengatur spasi antar kata.</p>
+    <img
+      src="https://cdn-cdpl.sgp1.cdn.digitaloceanspaces.com/courses/basic-html-dan-css/images/word_spasi.png"
+      alt=""
+      border="1" />
+
+    <hr />
+    <h2>CSS Font</h2>
+    <h3>Font Family</h3>
+    <p>
+      <strong>font-family</strong> digunakan untuk mengatur jenis font yang akan
+      digunakan.
+    </p>
+    <p>pada css, font-family dikelompokkan menjadi 2 bagian:</p>
+    <img
+      src="https://cdn-cdpl.sgp1.cdn.digitaloceanspaces.com/courses/basic-html-dan-css/images/font_1.png"
+      alt=""
+      border="1" />
+    <ul>
+      <li>
+        <strong>gengeric family</strong> - adalah jenis font standar yag
+        dipersiapkan sebagai pengganti jika font-family yang kita pilih tidak
+        tersedia dalam sistem komputer kita.
+      </li>
+      <li>
+        <strong>family name / nama font</strong> - adalah kelompok font yang
+        memiliki jenis serupa seperti Times New Roman atau Arial, dll.
+      </li>
+    </ul>
+    <p>
+      NB: jika kita menetapkan family name, maka sebaiknya kita juga menambahkan
+      generic family di akhir penulisan seperti font-family mengingat adanya
+      kemungkinan jenis font yang tidak tersedia.
+    </p>
+    <h3>font size</h3>
+    <p>digunakan untuk mengatur ukuran font.</p>
+    <p>kita dapat menggunakan ukuran font dengan px, % atau em.</p>
+    <table border="1">
+      <tr>
+        <th>px</th>
+        <th>em</th>
+      </tr>
+      <tr>
+        <td>
+          h1 -> 40px <br />
+          h2 -> 30px <br />
+          p -> 14px
+        </td>
+        <td>
+          h1 -> 2.5em <br />
+          h2 -> 1.875em <br />
+          p -> 0.875em
+        </td>
+      </tr>
+    </table>
+    <h3>font-weight</h3>
+    <p>digunakan untuk mengatur ketebalan font.</p>
+    <p>property font-weight yaitu: lighter, normal, 100-900, bold, bolder.</p>
+    <img
+      src="https://cdn-cdpl.sgp1.cdn.digitaloceanspaces.com/courses/basic-html-dan-css/images/font_weight.png"
+      border="1"
+      alt="" />
+    <h3>font-variant</h3>
+    <p>digunakan untuk mengubah font menjadi small-caps.</p>
+    <p>
+      contohnya: <strong>font-variant: normal;</strong> atau
+      <strong>font-variant: small-caps;</strong>
+    </p>
+    <img
+      src="https://cdn-cdpl.sgp1.cdn.digitaloceanspaces.com/courses/basic-html-dan-css/images/font_variant.png"
+      border="1"
+      alt="" />
+    <h3>font-style</h3>
+    <p>digunakan untuk mengubah font menjadi bercetak miring.</p>
+    <p>kita dapat menggunakan property normal, italic, oblique.</p>
+    <img
+      src="https://cdn-cdpl.sgp1.cdn.digitaloceanspaces.com/courses/basic-html-dan-css/images/font_style.png"
+      border="1"
+      alt="" />
+    <h3>line-height</h3>
+    <p>digunakan untuk mengatur spasi antar baris.</p>
+    <p>property yang digunakan pada line-height: normal, px, em.</p>
+    <h3>css shorthand</h3>
+    <p>
+      dari bermacam css font di atas, kita dapat menggabungkannya seperti
+      dibawah ini.
+    </p>
+    <img
+      src="https://cdn-cdpl.sgp1.cdn.digitaloceanspaces.com/courses/basic-html-dan-css/images/css_short.png"
+      border="1"
+      alt="" />
+    <p>berikut untuk peraturan penulisannya.</p>
+    <img
+      src="https://cdn-cdpl.sgp1.cdn.digitaloceanspaces.com/courses/basic-html-dan-css/images/css_short2.png"
+      border="1"
+      alt="" />
+    <hr />
+    <!-- fitur css3 -->
+    <h2>Fitur CSS3</h2>
+    <h3>REM Values</h3>
+    <p>menentukan nilai relatif dari sebuah elemen terhadap elemen html.</p>
+    <p>
+      artinya, jika ukuran font dari elemen html adalah 16px maka 1rem = 16px
+      untuk semua elemen.
+    </p>
+    <p>
+      ukuran font p = 0.75rem dari 20px yaitu 15px, sedangkan ukuran font label
+      = 1.25rem dari 20px yaitu 25px.
+    </p>
+    <h3>Background Size</h3>
+    <p>digunakan untuk menentukan ukuran gambar background.</p>
+    <p>nilai property:</p>
+    <h4>auto</h4>
+    <p>
+      menghasilkan nilai default. gambar background ditampilkan dalam ukuran
+      aslinya.
+    </p>
+    <p><strong>background-size: auto;</strong></p>
+    <h4>length</h4>
+    <p>
+      mengatur lebar dan tinggi gambar background. nilai pertama menetapkan
+      lebar, nilai kedua menetapkan tinggi.
+    </p>
+    <p>jika hanya satu nilai yang diberikan, yang kedua diatur ke auto.</p>
+    <h4>percentage</h4>
+    <p>
+      mengatur lebar dan tinggi gambar background dalam persen elemen induk.
+    </p>
+    <p>nilai pertama menetapkan lebar, nilai kedua menetapkan tinggi.</p>
+    <p>jika hanya satu nilai yang dibarikan, yang kedua siatur ke auto.</p>
+    <h4>cover</h4>
+    <p>
+      mengubah ukuran gambar background untuk menutupi seluruh kontainer, bahkan
+      jikaharus menetapkan gambar atau memotong sebagian dari ujung gambar.
+    </p>
+    <h4>contain</h4>
+    <p>
+      mengubah ukuran gambar background sesuai ratio gmabar dan memastikan
+      gambar terlihat sepenuhnya.
+    </p>
+
+    <h3>CSS Animation</h3>
+    <p>digunakan untuk menambahkan animasi pada web.</p>
+    <p><strong>browser pendukung:</strong></p>
+    <table border="1">
+      <tr>
+        <th>property</th>
+        <th>animation</th>
+      </tr>
+      <tr>
+        <td>chrome</td>
+        <td>
+          43.0 <br />
+          4.0 -webkit-
+        </td>
+      </tr>
+      <tr>
+        <td>Internet Explore / Edge</td>
+        <td>10.0</td>
+      </tr>
+      <tr>
+        <td>firefox</td>
+        <td>
+          16.0 <br />
+          5.0 -moz-
+        </td>
+      </tr>
+      <tr>
+        <td>safari</td>
+        <td>
+          9.0 <br />
+          4.0 -webkit-
+        </td>
+      </tr>
+      <tr>
+        <td>opera</td>
+        <td>30.0 <br />15.0 -webkit- <br />12.0 -o-</td>
+      </tr>
+    </table>
+    <p><strong>keterangan:</strong></p>
+    <p>
+      angka-angka dalam table menentukan versi browser pertama yang sepenuhnya
+      mendukung property.
+    </p>
+    <p>
+      angka-angka yang diikuti oleh -webkit-, -moz-, -o- menentukan versi
+      pertama yang bekerja dengan awalan -webkit-, -moz-, -o-.
+    </p>
+    <p>contoh pengguna opera versi 30.0 ke atas:</p>
+    <p style="border: 1px solid; padding: 2px">
+      <strong>animation-iteration-count: 2;</strong>
+    </p>
+    <p>sedangakan pengguna opera versi 15.0 hingga 29.0:</p>
+    <p style="border: 1px solid; padding: 2px">
+      <strong>-webkit-animation-iteration-count: 2;</strong>
+    </p>
+    <br />
+    <h3>nilai properti:</h3>
+    <p>
+      <strong>animation-name</strong> menentukan nama keyframe yang akan
+      dikaitkan ke slector.
+    </p>
+    <p>
+      <strong>animation-duration</strong> menentukan berapa lama waktu(dalam
+      satuan detik atau milidetik) yang diperlukan untuk menyelesaikan animasi.
+    </p>
+    <p>
+      <strong>animation-timing-funtion</strong> menentukan kurva kecepatan
+      animasi.
+    </p>
+
+    <ol>
+      <li>
+        <strong>linear</strong> mengatur animasi dengan kecepatan yang sama dari
+        awal hingga akhir.
+      </li>
+      <li>
+        <strong>ease</strong> nilai default animation-timing-funtion yaitu
+        animasi memiliki kecepatan awal lambat, kemudian cepat, kemudian
+        berakhir perlahan.
+      </li>
+      <li>
+        <strong>ease-in</strong> mengatur animasi dengan kecepatan awal atau
+        permulaan yang lambat.
+      </li>
+      <li>
+        <strong>ease-out</strong> mengatur animasi dengan akhir yang lambat.
+      </li>
+      <li>
+        <strong>ease-in-out</strong> mengatur animasi dengan awal yang lambat
+        dan akhir yang lambat.
+      </li>
+      <li><strong>initial</strong> menetapkan properti ke nilai default.</li>
+      <li>
+        <strong>inherit</strong> mengikuti nilai properti dari elemen induk,
+        misalkan pda elemen induk di set ease-in-out maka akan ikut di set
+        ease-in-out juga.
+      </li>
+    </ol>
+    <p>
+      <strong>animation-delay</strong> menentukan penundaan atau jeda sebelum
+      animasi dimulai.
+    </p>
+    <p>
+      <strong>animation-iteration-count</strong> menentukan berapa kali animasi
+      harus dimainkan.
+    </p>
+    <p>
+      <strong>animation-direction</strong> menentukan apakah animasi harus
+      dimainkan ke depan, mundur atau gabungan maju dan mundur(alternate). nilai
+      propretinya:
+    </p>
+    <ol>
+      <li>
+        <strong>normal</strong> animasi dimainkan seperti biasa (kedepan).
+      </li>
+      <li>
+        <strong>reverse</strong> animasi dimainkan secara tebalik (mundur).
+      </li>
+      <li>
+        <strong>alternate</strong> animasi dimainkan ke depan terlebih dahulu,
+        lalu mundur.
+      </li>
+      <li>
+        <strong>alternate-reverse</strong> animasi diputar mundur terlebiuh
+        dahulu, lalu ke depan.
+      </li>
+      <li><strong>initial</strong> mengatur animasi ke nilai default.</li>
+      <li>
+        <strong>inherit</strong> mengikuti nilai propeti dari elemen induk,
+        misalkan pada elemen induk di set reverse maka akan ikut di set reverse
+        juga.
+      </li>
+    </ol>
+    <p>
+      <strong>animation-fill-mode</strong> menentukan gaya sebuah elemen ketika
+      animasi tidak sedang dimainkan(sebelum mulai, setelah berakhir, atau
+      keduanya).
+    </p>
+    <p>
+      <strong>animation-play-state</strong> menentukan apakah animasi berjalan
+      atau berhenti.
+    </p>
+    <br />
+    <h3>More Pseudoclass</h3>
+    <p>digunakan untuk menentukan style khusus suatu elemen:</p>
+    <h5>:first-child</h5>
+    <p>menentukan style khusus pertama dari pada banyaknya list.</p>
+    <p>contohnya: <strong>li:first-child{value..}</strong></p>
+    <img
+      src="https://cdn-cdpl.sgp1.cdn.digitaloceanspaces.com/courses/basic-html-dan-css/images/pc.png"
+      border="1"
+      alt="" />
+    <h5>:last-child</h5>
+    <p>
+      kebalikan dari first-child, menentukan style khusus elemen yang terakhir.
+    </p>
+    <p>contohnya: <strong>li:last-child{value..}</strong></p>
+    <img
+      src="https://cdn-cdpl.sgp1.cdn.digitaloceanspaces.com/courses/basic-html-dan-css/images/ps2.png"
+      border="1"
+      alt="" />
+    <h5>:nth-child(n)</h5>
+    <p>
+      menentukan style khusus elemen yang diinginkan, misal elemen dengan urutan
+      2 dan 3.
+    </p>
+    <p>contohnya: <strong>li:nth-child(2), li:nth-child(3){value..}</strong></p>
+    <img
+      src="https://cdn-cdpl.sgp1.cdn.digitaloceanspaces.com/courses/basic-html-dan-css/images/ps3.png"
+      border="1"
+      alt="" />
+    <h5>:nth-child(odd) dan :nth-child(even)</h5>
+    <p>menentukan style khusus elemen ganjil dan genap.</p>
+    <p>
+      contohnya:
+      <strong
+        >li:nth-child(odd){background-color: yellow; color:red;} dan
+        li:nth-child(even){background-color: orange;}</strong
+      >
+    </p>
+    <img
+      src="https://cdn-cdpl.sgp1.cdn.digitaloceanspaces.com/courses/basic-html-dan-css/images/ps4.png"
+      border="1"
+      alt="" />
+    <h5>:first-letter</h5>
+    <p>menentukan style khusus untuk huruf pertama pada suatu elemen.</p>
+
+    <br />
+    <h3>Box Shadow</h3>
   </body>
 </html>
