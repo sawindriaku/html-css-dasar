@@ -175,6 +175,138 @@
         alt="" />
     </ol>
 
+    <hr />
+    <h2>Fungsi</h2>
+    <p>
+      <strong>Fungsi javascript</strong> adalah blok kode yang dirancang untuk
+      melakukan tugas tertentu.
+    </p>
+    <p>aturan membuat fungsi:</p>
+    <ol>
+      <li>
+        di definisikan dengan keyword <strong>function</strong> lalu di ikuti
+        oleh <strong>nama_function</strong> dan tanda kurung ().
+      </li>
+      <li>
+        nama fungsi dapat berisi
+        <strong>huruf, angka, underscore (_), tanda dolar.</strong>
+      </li>
+      <li>
+        tanda kurung termasuk nama parameter di pisahkan oleh koma (parameter1,
+        parameter2, ....).
+      </li>
+      <li>
+        kode yang akan dieksekusi ditempatkan di dalam tanda kurung kurawal {}.
+      </li>
+      <img
+        src="https://deretcode.com/assets/uploads/20210518/a9cfb0818d6492d0cdb821aabba6af6b.png"
+        alt="" />
+      <div id="mobil"></div>
+    </ol>
+    <hr />
+    <h2>Array</h2>
+    <p>
+      array merupakan variable khusus yang dapat menampung lebih dari satu data
+      pada satu waktu.
+    </p>
+    <p>syntax:</p>
+    <strong>
+      <p>var buah = ["apel", "anggur", "jeruk", "pepaya"];</p>
+    </strong>
+    <img
+      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgi4OulHss2BpEWafedlF7W95Oy76nZJrZDZFbKCJDJDKgHAYk8CFZ2T07MckMsVvTCXRjfX5rt9JXaNRH9oEX0O5-T8Ls42o9-8YybvVmfFKW45W5CmUIJpIv3fTjJs-6OFIfuWjly6bH6bgGbYnG6osg0ZiifMAc7xFb6bmvymBmAyvD92aM4VzE/s969/12.png"
+      alt="" />
+    <h3>menghitung jumlah array</h3>
+    <strong>
+      <p>
+        var nama_array = ["satu", "dua", "tiga", "empat"]; <br />
+        nama_array.length; <br />
+        // outpunya = 3
+      </p>
+    </strong>
+    <h3>mengakses data array</h3>
+    <p>
+      untuk mengakses eleme terakhir pada array, panggil menggunakan key elemen.
+    </p>
+    <strong>
+      <p>
+        var buah = ['apel', 'anggur', 'jeruk']; <br />var buahSatu = buah[0];
+        <br />
+        // outputnya apel
+      </p>
+    </strong>
+    <h3>mengubah array menjadi string (.toString)</h3>
+    <p><strong>nama_array.toString();</strong></p>
+    <h3>mengubah array menjadi string (.join)</h3>
+    <p>
+      apabila kita ingin mengganti pemisah dari defaultnya koma dengan yang
+      lainnya, maka gunakan syntax berikut.
+    </p>
+    <strong>
+      <p>
+        nama_array.join("pemisah_yang_di_inginkan"); bisa menggunakan spasi,
+        koma, titik, tanda bintang, tanda plus, dan lain-lain.
+      </p>
+    </strong>
+    <h3>mengeluarkan data dari array (.pop)</h3>
+    <p>
+      kita bisa mengeluarkan datat terakhir dari array dengan menggunakan syntax
+      berikut.
+    </p>
+    <strong>
+      <p>nama_array.pop(); // mengeluarkan data dari array terakhir</p>
+    </strong>
+    <h3>memasukkan data array (.push)</h3>
+    <p><strong>nama_array.push("nama_item");</strong></p>
+    <h3>menggabungkan dua array (.concat)</h3>
+    <p><strong>var nama_array = array1.concat(array2);</strong></p>
+    <h3>menggabungkan tiga array (.concat)</h3>
+    <p><strong>var nama_array = array1.concat(array2, array3);</strong></p>
+    <h3>iterasi data dari array dengan (.forEach)</h3>
+    <p>kita dapat looping menggunakan foreach.</p>
+    <img src="/img/each_js.png" alt="" />
+    <h3>iterasi menggunakan metode (.map)</h3>
+    <p>
+      kita bisa menggunakan metode map() untuk membuat array baru dengan
+      melakukan fungsi pda setiap elemen array.
+    </p>
+    <ul>
+      <li>
+        Metode <strong>map()</strong> tidak menjalankan fungsi untuk elemen
+        array tanpa nilai.
+      </li>
+      <li>Metode <strong>map()</strong> tidak mengubah array asli.</li>
+    </ul>
+    <img src="/img/iterasi_map().png" alt="" />
+    <hr />
+
+    <h2>Object</h2>
+    <p>
+      merupakan <strong>abstraksi</strong> dari benda yang ada di dunia nyata.
+      Digunakan untuk menyimpan data.
+    </p>
+    <p>
+      pada javascirpt, object terdiri dari
+      <strong>nama dan value(variable) atau method (fungsi)</strong> atau bisa
+      disebut juga dengan property.
+    </p>
+    <h3>analogi Object:</h3>
+    <img
+      src="https://cdn-cdpl.sgp1.cdn.digitaloceanspaces.com/courses/basic-javascript/images/analogi_object.png"
+      alt="" />
+    <h3>inisialisasi object dan property</h3>
+    <p>
+      <strong
+        >var mobil = {nama: "toyota", type: "agya", berat: 600, warna:
+        "putih"};</strong
+      >
+    </p>
+    <h3>inisialisai method</h3>
+    <img src="/img/inisialisai_method.png" alt="" />
+    <h3>mengakses property dan method pada object</h3>
+    <p><strong>nama_object.nama_method();</strong></p>
+    <img src="/img/akses_proprty_dan_method.png" alt="" />
+
     <!-- script -->
     <script src="script.js"></script>
     <script>
