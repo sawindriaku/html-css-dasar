@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript</title>
+  </head>
+  <body>
+    <a href="/index.html">back to my homepage</a>
+    <h1 align="center">Javascript</h1>
+    <hr />
+
+    <h2>Pengertian Javascript</h2>
+    <p>
+      <strong>Javascript</strong> adalah bahasa pemrograman yang digunakan untuk
+      menambah fitur interkatif pada website, seperti ketika ingin membuat game,
+      melakukan perubahan ketika mengklik tombol, efek dinamik, animasi, dan
+      masih banyak lagi.
+    </p>
+    <p>
+      Javascript diciptakan oleh <strong>Brendan Eich</strong> yang juga
+      merupakan co-founder dari
+      <strong>Mozilla project, Mozilla Foundation</strong> dan
+      <strong>Mozilla Corporation.</strong>
+    </p>
+    <h2>Dukungan Browser</h2>
+    <p>
+      <strong>Javascript</strong> bisa dijalankan di browser
+      <strong
+        >Google Chrome, Internet Exploler atau Microsoft Edge, Mozilla Firefo,
+        Opera, Safari.</strong
+      >
+    </p>
+    <p>javascript berbeda dengan Java.</p>
+    <p>Javascript biasanya di jalankan di console.</p>
+    <h2>Variable dan Type Data Javascript</h2>
+    <p>
+      <strong>Variable</strong> adalah digunakan untuk menampung data atau
+      konstanta di memori yang memiliki nilai.
+    </p>
+    <p><strong>var nama_variable = nilaidata;</strong></p>
+    <p><strong>var x = 5;</strong></p>
+    <p><strong>var y = 2;</strong></p>
+    <p><strong>var z = x+y;</strong></p>
+    <p>
+      <strong>Type data</strong> digunakan untuk menentukan jenis suatu data
+      <strong>(deklarasi variable)</strong>.
+    </p>
+    <p>Jenis type data:</p>
+    <ul>
+      <li><strong>string</strong> = "hallo"</li>
+      <li><strong>boolean</strong> = true / false</li>
+      <li><strong>number</strong> = 1,2,3</li>
+      <li><strong>array</strong> = ["hallo", "dunia", ...]</li>
+      <li><strong>object</strong> = {hallo: "dunia", ...}</li>
+    </ul>
+    <p>
+      cara mengecek type data dapat menggunakan =
+      <strong>typeof nama_variable</strong>
+    </p>
+    <hr />
+    <h2>Opeartor</h2>
+    <p>
+      <strong>Operator</strong> adalah simbol-simbol yang digunakan untuk
+      mengoperasikan suatu nilai data (operand).
+    </p>
+    <p>macam operator:</p>
+    <h3>operator aritmatika</h3>
+    <p>digunakan untuk melakukan aritmatika pada angka.</p>
+    <ul>
+      <li>+ | penambahan</li>
+      <li>- | pengurangan</li>
+      <li>* | perkalian</li>
+      <li>/ | pembagian</li>
+      <li>% | modulus / sisa bagi</li>
+      <li>++ | increment</li>
+      <li>-- | decrement</li>
+    </ul>
+    <h3>operator assigment</h3>
+    <p>memberikan nilai ke variable javascript.</p>
+    <ul>
+      <li>= | x = y | x = y</li>
+      <li>+= | x += y | x = x + y</li>
+      <li>-= | x -= y | x = x - y</li>
+      <li>*= | x *= y | x = x * y</li>
+      <li>/= | x /= y | x = x / y</li>
+      <li>%= | x %= y | x = x % y</li>
+    </ul>
+    <h3>operator penggabung</h3>
+    <p>digunakan untuk mneggabungkan string.</p>
+    <strong>
+      <p>var teks1 = "hallo";</p>
+      <p>var teks2 = "dunia";</p>
+      <p>var teks3 = teks1 + " " + teks2;</p>
+    </strong>
+    <h3>operator pembanding</h3>
+    <ul>
+      <li>== sama isinya</li>
+      <li>=== sama isinya dan sama tipenya</li>
+      <li>!= tidak sama dengan isinya</li>
+      <li>!== tidak sama isinya dan tidak sama tipenya</li>
+      <li>> lebih dari</li>
+      <li>< kurang dari</li>
+      <li>>= lebih dari sama dengan</li>
+      <li><= kurang dari sama dengan</li>
+      <li>? operator ternary (if else sederhana)</li>
+    </ul>
+    <h3>operator logika</h3>
+    <ul>
+      <li>&& AND bernilai true</li>
+      <li>
+        ! NOT logika pembalik. bernilai true bila kondisi false dan bernilai
+        false bila kondisi true
+      </li>
+    </ul>
+    <hr />
+    <h2>Perulangan</h2>
+    <p>digunakan untuk mengulang code dengan data yang banyak atau berbeda</p>
+    <ul>
+      <li>For = digunakan untuk mengulang melalui blok kode beberapa kali.</li>
+      <div id="forData"></div>
+      <img
+        src="https://deretcode.com/assets/uploads/20210519/4c8c484f7681e188b56a2f4079ed994a.png"
+        alt="" />
+      <li>
+        While = digunakan untuk mengulang blok kode selama kondisi tertentu
+        benar
+      </li>
+      <div id="whileData"></div>
+      <img
+        src="https://media.geeksforgeeks.org/wp-content/uploads/20240214162718/While-Loop-GeeksforGeeks.jpg"
+        width="500"
+        alt="" />
+      <li>
+        Do While = mengeksekusi code satu kali sebelum memeriksa apakah kondisi
+        benar, jika kondisinya benar maka akan mengulang loop.
+      </li>
+      <div id="dowhileData"></div>
+      <img
+        src="https://media.geeksforgeeks.org/wp-content/uploads/20240214163421/do-while-Loop-GeeksforGeeks2.jpg"
+        width="500"
+        alt="" />
+    </ul>
+    <hr />
+    <h2>Pengkondisian</h2>
+    <p>
+      digunakan untuk melakukan tindakan yang berbeda berdasarkan pada kondisi
+      yang berbeda. Contohnya:
+    </p>
+    <ol>
+      <li>
+        <strong>if</strong> untuk menentukan blok kode yang akan dieksekusi jika
+        kondisi yang ditentukan bernilai benar / true.
+      </li>
+      <li>
+        <strong>else</strong> untuk menentukan blok kode yang akan di eksekusi
+        jika kondisi yang di tentukan bernilai false / salah.
+      </li>
+      <img
+        src="https://media.geeksforgeeks.org/wp-content/uploads/20250728115910164163/2.webp"
+        alt="" />
+      <li>
+        <strong>else if</strong> untuk menentukan kondisi baru jika kondisi
+        pertama salah.
+      </li>
+      <img
+        src="https://miro.medium.com/v2/resize:fit:990/1*N4mvLQXGr9J7ehhQ4fuBrA.png"
+        alt="" />
+      <li>
+        <strong>switch</strong> untuk melakukan tindakan yang berbeda
+        berdasarkan pada kondisi yang berbeda (sama seperti elseif).
+      </li>
+      <img
+        src="https://miro.medium.com/v2/resize:fit:968/1*F_0GMe3QwrsXvqmrk9OzQw.png"
+        alt="" />
+    </ol>
+
+    <!-- script -->
+    <script src="script.js"></script>
+    <script>
+      // perulangna for javascript
+      for (var i = 1; i <= 5; i++) {
+        console.log("ini perulangan for " + i);
+        document.getElementById("forData").innerHTML +=
+          "looping menggunakan for " + i + "<br>";
+      }
+      // perulangan while javascript
+      var j = 1;
+      while (j < 5) {
+        console.log("loooping while " + j);
+        document.getElementById("whileData").innerHTML +=
+          "ini adalah looping while " + j + "<br>";
+        j++;
+      }
+      // perulangan do while javascript
+      var k = 1;
+      do {
+        console.log("ini do while " + k);
+        document.getElementById("dowhileData").innerHTML +=
+          "ini adalah perulangan menggunakan do while " + k + "<br>";
+        k++;
+      } while (k < 5);
+    </script>
+  </body>
+</html>
